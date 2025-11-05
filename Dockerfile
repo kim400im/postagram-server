@@ -12,4 +12,4 @@ RUN wget https://github.com/pocketbase/pocketbase/releases/download/v${PB_VERSIO
     && chmod +x /app/pocketbase
 
 EXPOSE 8090
-CMD ["/pocketbase", "serve", "--http=0.0.0.0:8090"]
+CMD ["./pocketbase", "serve", "--http=0.0.0.0:8090"]
