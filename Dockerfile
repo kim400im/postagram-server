@@ -10,8 +10,5 @@ RUN wget https://github.com/pocketbase/pocketbase/releases/download/v${PB_VERSIO
 
 WORKDIR /app
 
-# 마이그레이션 파일 복사 (올바른 경로)
-COPY pb_migrations /app/pb_migrations
-
 EXPOSE 8090
 CMD ["/pocketbase", "serve", "--http=0.0.0.0:8090"]
