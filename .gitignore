@@ -1,0 +1,18 @@
+# PocketBase 바이너리
+pocketbase
+pocketbase.exe
+
+# 실제 데이터베이스 (사용자 데이터)
+pb_data/data.db
+pb_data/data.db-shm
+pb_data/data.db-wal
+
+# 업로드된 파일들
+pb_data/storage/*
+
+# 로그
+pb_data/logs/*
+
+# 하지만 폴더 구조는 유지
+!pb_data/storage/.gitkeep
+!pb_data/logs/.gitkeep

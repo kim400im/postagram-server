@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  pocketbase:
+    build: .
+    container_name: pocketbase-instagram
+    restart: unless-stopped
+    ports:
+      - "8090:8090"
+    volumes:
+      # pb_data를 볼륨으로 마운트 (데이터 영속성)
+      - ./pb_data:/app/pb_data
+    environment:
+      - TZ=Asia/Seoul
